@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Atlas | Stellar Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>✨ Celestial Atlas</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <h2>Stellar Objects Gallery</h2>
+            <p>Click on any image to learn more about these cosmic wonders</p>
+        </section>
+
+        <section class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-name="Betelgeuse" data-info="Red supergiant star in Orion constellation">
+                <img src="images/Betelgeuse.jpg"
+                    alt="Betelgeuse star">
+                <div class="gallery-caption">
+                    <h3>Betelgeuse</h3>
+                    <p>Red Supergiant</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-name="Orion Nebula" data-info="Diffuse nebula located south of Orion's Belt">
+                <img src="images/OrionNebula.jpg"
+                    alt="Orion Nebula">
+                <div class="gallery-caption">
+                    <h3>Orion Nebula</h3>
+                    <p>Star-forming Region</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-name="Crab Nebula" data-info="Supernova remnant observed in 1054 AD">
+                <img src="images/Crab_Nebula.jpg"
+                    alt="Crab Nebula">
+                <div class="gallery-caption">
+                    <h3>Crab Nebula</h3>
+                    <p>Supernova Remnant</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-name="Sirius" data-info="Brightest star in Earth's night sky">
+                <img src="images/Sirius.jpg"
+                    alt="Sirius star">
+                <div class="gallery-caption">
+                    <h3>Sirius</h3>
+                    <p>Main Sequence Star</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-name="Helix Nebula" data-info="Planetary nebula often called 'Eye of God'">
+                <img src="images/HelixNebula.jpg"
+                    alt="Helix Nebula">
+                <div class="gallery-caption">
+                    <h3>Helix Nebula</h3>
+                    <p>Planetary Nebula</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-name="Milky Way" data-info="Our home galaxy containing billions of stars">
+                <img src="images/milkyway-620x330.jpg"
+                    alt="Milky Way galaxy">
+                <div class="gallery-caption">
+                    <h3>Milky Way</h3>
+                    <p>Barred Spiral Galaxy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for image info (triggered by JavaScript) -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalInfo"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Celestial Atlas. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
