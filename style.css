@@ -440,3 +440,9 @@ footer {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+.form-container .btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5rem auto 0 auto;
+}
